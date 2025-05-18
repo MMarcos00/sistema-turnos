@@ -19,6 +19,13 @@ public class Historial {
     @ManyToOne
     @JoinColumn(name = "servicio_id")
     private Servicio servicio;
+    @ManyToOne
+    @JoinColumn(name = "turno_id")
+    private Turno turno;
+
+    public Turno getTurno() {
+        return turno;
+    }
 
     // Getters y Setters
 
@@ -61,4 +68,9 @@ public class Historial {
     public void setServicio(Servicio servicio) {
         this.servicio = servicio;
     }
+
+    public void setTurno(Turno turno) {
+        this.turno = turno;
+    }
+
 }
