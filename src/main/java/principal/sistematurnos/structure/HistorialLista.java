@@ -1,13 +1,18 @@
-package principal.sistematurnos.estructura;
+package principal.sistematurnos.structure;
+
+
 
 import principal.sistematurnos.model.Historial;
+
 import java.util.LinkedList;
 import java.util.List;
 
-public class ListaHistorial {
+public class HistorialLista{
+
     private final List<Historial> historial;
 
-    public ListaHistorial() {
+    public HistorialLista() {
+
         this.historial = new LinkedList<>();
     }
 
@@ -21,5 +26,9 @@ public class ListaHistorial {
 
     public int tamaño() {
         return historial.size();
+    }
+
+    public List<Historial> getTodos() {
+        return historial;
     }
 }

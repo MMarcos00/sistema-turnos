@@ -15,7 +15,7 @@ public class Servicio {
     private List<Turno> turnos;
 
     @OneToMany(mappedBy = "servicio")
-    private List<Historial> historiales;
+    private List<principal.sistematurnos.model.Historial> historiales;
 
     // Getters y Setters
 
@@ -43,11 +43,11 @@ public class Servicio {
         this.turnos = turnos;
     }
 
-    public List<Historial> getHistoriales() {
+    public List<principal.sistematurnos.model.Historial> getHistoriales() {
         return historiales;
     }
 
-    public void setHistoriales(List<Historial> historiales) {
+    public void setHistoriales(List<principal.sistematurnos.model.Historial> historiales) {
         this.historiales = historiales;
     }
 }

@@ -1,11 +1,11 @@
-package principal.sistematurnos.estructura;
+package principal.sistematurnos.structure;
 
 import java.util.Stack;
 
-public class PilaDeAcciones {
+public class PilaAcciones {
     private final Stack<String> pila;
 
-    public PilaDeAcciones() {
+    public PilaAcciones() {
         this.pila = new Stack<>();
     }
 

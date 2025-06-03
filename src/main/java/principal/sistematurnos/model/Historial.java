@@ -1,5 +1,6 @@
 package principal.sistematurnos.model;
 
+
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
@@ -14,18 +15,15 @@ public class Historial {
 
     @ManyToOne
     @JoinColumn(name = "cliente_id")
-    private Cliente cliente;
+    private principal.sistematurnos.model.Cliente  cliente;
 
     @ManyToOne
     @JoinColumn(name = "servicio_id")
     private Servicio servicio;
+
     @ManyToOne
     @JoinColumn(name = "turno_id")
     private Turno turno;
-
-    public Turno getTurno() {
-        return turno;
-    }
 
     // Getters y Setters
 
@@ -53,11 +51,11 @@ public class Historial {
         this.observaciones = observaciones;
     }
 
-    public Cliente getCliente() {
+    public principal.sistematurnos.model.Cliente  getCliente() {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(principal.sistematurnos.model.Cliente  cliente) {
         this.cliente = cliente;
     }
 
@@ -72,5 +70,4 @@ public class Historial {
     public void setTurno(Turno turno) {
         this.turno = turno;
     }
-
 }

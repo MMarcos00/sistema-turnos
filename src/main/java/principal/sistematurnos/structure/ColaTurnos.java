@@ -1,13 +1,15 @@
-package principal.sistematurnos.estructura;
+package principal.sistematurnos.structure;
+
 
 import principal.sistematurnos.model.Turno;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ColaDeTurnos {
+public class ColaTurnos {
     private final Queue<Turno> cola;
 
-    public ColaDeTurnos() {
+    public ColaTurnos() {
         this.cola = new LinkedList<>();
     }
 

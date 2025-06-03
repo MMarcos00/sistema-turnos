@@ -1,10 +1,12 @@
-package principal.sistematurnos.estructura;
+package principal.sistematurnos.structure;
+
 
 import principal.sistematurnos.model.Servicio;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArbolServicios {
+public class ServiciosArbol {
 
     public static class Nodo {
         private Servicio servicio;
@@ -30,7 +32,7 @@ public class ArbolServicios {
 
     private Nodo raiz;
 
-    public ArbolServicios(Servicio servicioRaiz) {
+    public ServiciosArbol(Servicio servicioRaiz) {
         this.raiz = new Nodo(servicioRaiz);
     }
 
