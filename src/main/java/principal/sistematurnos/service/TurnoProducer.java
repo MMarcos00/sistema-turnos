@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import principal.sistematurnos.model.Turno;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import umg.principal.sistematurno.config.RabbitMQConfig;
+import principal.sistematurnos.config.RabbitMQConfig;
 
 @Service
 public class TurnoProducer {

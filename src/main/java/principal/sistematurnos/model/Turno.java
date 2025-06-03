@@ -55,7 +55,7 @@ public class Turno {
     }
 
     public void setFechaProgramada(LocalDate fechaProgramada) {
-        this.fechaProgramada = fechaProgramada;
+        this.fechaProgramada = LocalDate.from(fechaProgramada.atStartOfDay());
     }
 
     public LocalDateTime getFechaCreacion() {
